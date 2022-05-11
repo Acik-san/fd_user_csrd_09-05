@@ -1,51 +1,102 @@
-.cards-container{
+.cards-container {
   --main-color: #17a2b8;
   text-align: center;
 }
-.card-wrapper{
+
+.container-title {
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.card-wrapper {
   --img-size: 80px;
   display: inline-block;
-  min-width: calc(3*var(--img-size));
+  min-width: calc(3 * var(--img-size));
   width: 100%;
-  max-width: calc(3.5*var(--img-size));
-  border: 1px solid  var(--main-color);
+  max-width: calc(3.5 * var(--img-size));
+  border: 1px solid var(--main-color);
   margin: 10px;
-  text-align: center;
   font-family: sans-serif;
 }
-.card-bg-header{
-  height: calc(1.3*var(--img-size));
+
+.card-bg-header {
+  height: calc(1.3 * var(--img-size));
   background-color: var(--main-color);
 }
-.card-content{
+
+.card-content {
   padding-left: 5%;
   padding-right: 5%;
-  margin-top: calc(0.5*var(--img-size)*-1);
+  margin-top: calc(0.5 * var(--img-size) * -1);
 }
-.photo{
+
+div.card-content>p{
+  padding: 20px;
+}
+
+.photo {
   box-sizing: border-box;
   width: var(--img-size);
   height: var(--img-size);
-  padding:4px;
   border: 1px solid grey;
   border-radius: 50%;
-  background-color: white;
+  padding: 4px;
   object-fit: cover;
   object-position: top;
+  background-color: white;
+  
 }
-.format-text{
-  text-transform: capitalize;
+
+.fullname-user {
+  padding-top: 15px;
+  font-size: large;
+}
+
+.adress-format{
+  padding: 10px;
+}
+
+.format-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-transform: capitalize;
 }
-.btn{
+
+.map-marker {
+  width: 18px;
+  height: 18px;
+  vertical-align: bottom;
+}
+
+.btn-wrapper {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn {
   max-width: 40%;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 6px;
+  background-color: #28a745;
+  color: white;
 }
-.card-footer{
+
+.btn + .btn {
+  background-color: #17a2b8;
+}
+
+.card-footer {
+  padding: 8px;
   background-color: var(--main-color);
 }
-.social-icon{
+
+.social-icon {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -53,6 +104,16 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.twitter{
+
+.fb {
+  background-image: url(./../icons/facebook.png);
+}
+
+.google {
+  background-image: url(./../icons/google-plus.png);
+  background-size: 32px;
+}
+
+.twitter {
   background-image: url(./../icons/twitter.png);
 }
